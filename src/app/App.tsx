@@ -46,12 +46,11 @@ import { useMainListeItemStyle } from "../components/style/listItem.style";
 import Avatar from "@material-ui/core/Avatar";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
-import {
-  // finishLoading,
-  // hideNotification,
-  // setCurrentResult,
-  // startLoading,
-} from "./appSlice";
+import // finishLoading,
+// hideNotification,
+// setCurrentResult,
+// startLoading,
+"./appSlice";
 import { isReturnStatement } from "typescript";
 import { AppState } from "./appSlice";
 import { RootState } from "./rootReducer";
@@ -113,52 +112,43 @@ export default function App() {
     {
       name: "Dashboard",
       icon: <DashboardIcon />,
-      link: "",
+      link: "dashboard",
     },
     {
-      name: "Profiles",
+      name: "Checklist",
       icon: <ProfilesIcon />,
       link: "profiles",
     },
     {
-      name: "Media",
-      icon: <MediaIcon />,
+      name: "Corrective Actions",
+      icon: <CorrectiveActionIcon />,
+      link: "correctiveAction",
+    },
+    {
+      name: "Follow Up",
+      icon: <FollowUpIcon />,
+      link: "followUp",
+    },
+    {
+      name: "Employees",
+      icon: <EmployeesIcon />,
       link: "",
     },
     {
-      name: "Projects",
-      icon: <ProjectsIcon />,
-      link: "projects",
-    },
-    {
-      name: "Messaging",
-      icon: <MessagingIcon />,
+      name: "Report",
+      icon: <ReportIcon />,
       link: "",
     },
     {
-      name: "Representation",
-      icon: <RepresentationIcon />,
+      name: "Cloud Library",
+      icon: <CloudLibraryIcon />,
       link: "",
     },
     {
-      name: "Pitch",
-      icon: <PitchIcon />,
+      name: "Chit Chat",
+      icon: <ChitChatIcon />,
       link: "",
     },
-    {
-      name: "Schedule",
-      icon: <ScheduleIcon />,
-      link: "",
-    },
-    // , {
-    //     name: 'Contacts',
-    //     icon: <ContactsIcon />,
-    //     link: '',
-    // }, {
-    //     name: 'Website',
-    //     icon: <WebsiteIcon />,
-    //     link: '',
-    // }
   ];
 
   const myDrawer = (
