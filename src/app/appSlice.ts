@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { login } from "../api/myAccount";
+import { login } from "../api/myAccounts";
 import { register } from "../serviceWorker";
 import { DataResult, Result, ResultType } from "../types";
 import { AppThunk } from "./store";
