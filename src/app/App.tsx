@@ -42,7 +42,7 @@ import {
   Link,
   Redirect,
 } from "react-router-dom";
-// import { useMainListeItemStyle } from "../components/style/listItem.style";
+import { useMainListeItemStyle } from "../components/style/listItem.style";
 import Avatar from "@material-ui/core/Avatar";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
